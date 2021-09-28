@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+ol{
+    list-style-type: none;
+}
+
+
+.interlineado{
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+}
+.negro{
+    background-color: black;
+}
+footer{
+    color:white
+}
+.header__titulo{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+}
+.normal{
+    font-style: normal;
+    font-weight: normal;
+}
+form{
+    font-size: 110%;
+}
+h4{
+    font-size: 100%;
+}
+.tipografia{
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.centro{
+    text-align: center;
+}
+
+.margen_seccion{
+   margin-top: 35px;
+   margin-bottom: 35px;
+   margin-left: 20px;
+   margin-right: 100px;
+   
+}
+.margen_seccionTallesYGarantia{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 100px;
+
+}
+.margen_imagen{
+ margin: 30px 40px 40px 40px;
+ padding: 5px 5px 5px 5px;
+}
+.margen_menu{
+    margin-top: 12rem;
+}
+
+footer{
+    padding: 20px 10px 20px 10px;
+}
+.seccion_linea{
+    display: inline block;
+    top: 2px;
+}
+
+
+
+video{
+    padding: 139px 20px 50px 20px;
+}
+
+.overlapping{
+    position:absolute; z-index: 1;
+    width: 100%;
+}
+
+ul {    
+    font-size: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    width: 25%;
+  }
+  
+  .menu{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    color:whitesmoke;
+    background-color:black;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  ul ul { 
+     position: absolute;
+     display: none; 
+  }
+  ul ul li { 
+    width: 100%;
+  }
+  
+  ul li:hover ul {
+     display:block;
+  }
+
+  ul li:hover ul a:hover {
+    background-color:rgb(255, 22, 138); 
+  }
+  
+.padre-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.ayuda-flex{
+display: flex;
+flex-direction:column;
+justify-content: center space-between;
+align-items: stretch;
+}
+
+
+
+.grid-container-carterasybuzos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 35px;
+    justify-items:center;
+    align-items: center;
+}
+  
+  
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: (3, 1fr);
+    grid-template-areas: "header"
+    "section"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: (2,1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: "article div";
+}
+
+article{
+    grid-area: article;
+}
+
+div{
+    grid-area: div;
+}
+
+.gradiente{
+    background-image: linear-gradient(to top, rgba(170, 170, 170, 0.932), whitesmoke);
+}
+
+img{
+    transform: scale(1,1);
+    transition: all 2s;
+}
+
+img:hover {
+    height: 400px; width: 350px;
+    padding: 20px;
+    background-color:pink;
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name:titulo;
+ }
+ 
+ 
+ @keyframes titulo {
+    0% {
+      opacity: 0 ;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
