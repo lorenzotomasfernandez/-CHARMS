@@ -5,45 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHARMS</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/archivo.css">
 
 </head>
-<body class="interlineado normal tipografia">
     
-    <body class="interlineado normal tipografia">
+    <body class="interlineado normal tipografia gradiente">
         <header>
-                <h1 class="negro header__titulo">CHARMS</h1>
-                
-                
-            <nav>
-               <h2>
-                  <ul>
-                    <li><a href="../index.html" class="menu">INICIO</a></li> 
-                    <li>
-                    <a href="./Productos.html" class="menu">PRODUCTOS</a>
-                    <ul>  <li><a href="accesorios.html" class="menu">ACCESORIOS</a></li>
-                         <li><a href="Carteras.html" class="menu">BOLSOS</a></li>
-                         <li><a href="buzos.html" class="menu">BUZOS</a></li>
-                        
+            <h1 class="header__titulo negro">CHARMS</h1>
+            
+                <nav class="navbar navbar-expand-lg navbar-dark negro">
+                  <a class="navbar-brand" href="./modal.html">
+                    <ion-icon name="people-circle-outline"></ion-icon>
+                  </a>
+                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse justify-content-center collapse" id="navbarNavDropdown" style="">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">INICIO</a> <span class="sr-only">(current)</span>
+                      </li>
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="./Paginas/Productos.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          PRODUCTOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./accesorios.html">ACCESORIOS</a>
+                          <a class="dropdown-item" href="./Carteras.html">BOLSOS</a>
+                          <a class="dropdown-item" href="./buzos.html">BUZOS</a>
+                        </div>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="./Contactanos.html">CONTACTANOS</a>
+                      </li>
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="./ayuda.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        AYUDA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./ayuda.html #envios">ENVIOS</a>
+                          <a class="dropdown-item" href="./ayuda.html #cambiosydevoluciones">CAMBIOS Y DEVOLUCIONES</a>
+                          <a class="dropdown-item" href="./ayuda.html #garantia">GARANTIA</a>
+                          <a class="dropdown-item" href="./ayuda.html #talles">TALLES</a>
+                        </div>
+                      </li>
                     </ul>
-                </li>
-                    <li><a href="./Contactanos.html" class="menu">CONTACTANOS</a></li>
-                    <li><a href="./ayuda.html" class="menu">AYUDA</a>
-                        <ul>
-                        <li><a href="./ayuda.html #envios" class="menu">ENVIOS</a></li>
-                        <li><a  href="./ayuda.html #cambiosydevoluciones" class="menu">CAMBIOS Y DEVOLUCIONES</a></li>
-                        <li><a href="./ayuda.html #garantia" class="menu">GARANTIA</a></li>
-                        <li><a href="./ayuda.html #talles" class="menu">TALLES</a></li>
-                        </UL>
-                    </li>
-    
-    
-                  </ul>
-               </h2>
-            </nav>
-        </header>
+                  </div>
+                </nav>
+              </header>
 
-<section class="gradiente">
+<section>
  <div class="margen_seccion ayuda-flex transform" id="envios">
     <p> <h2> ENVIOS </h2>
     <p><h4>Costo de envios</h4> </p>
@@ -88,8 +100,9 @@
 
        <div class="margen_seccionTallesYGarantia ayuda-flex id="talles">
            <H2>TALLES</H2>
-           <table border="2">
-               <caption><h4>TABLA DE MEDIDAS BUZOS</h4></caption>
+           <table class="table table-striped table-hover" >
+               <h5>TABLA DE MEDIDAS - BUZOS</h5>
+               
                <tr>
                 <th>TALLA</th>
                 <th>XS</th>
@@ -152,32 +165,50 @@
            </table>
        </div>
 </section>
-<footer class="negro">
-    <article>
-     <h3>   
-     <div>
-         <p class="negro negrita">Seguinos en</p>      
-             <p class="padre-flex"><a href="https://www.instagram.com/by_charms/">Instagram</a></p>
-             <p class="padre-flex"><a href="http://www.Facebook.com">Facebook</a></p>
-     </div>
-     </h3>
- </article>
-<div>
-     <form action="" method="POST" 
-         <p> <h4>Boletin Informativo</h4></p>
-      
-         <input type="email">
- <p>
- Para recibir informacion debes aceptar nuestros términos del servicio
- </p>
-         <input type="checkbox" name="terminosservicio" required> Acepto los términos del servicio
-        
-        <p> <input type="submit" value="Enviar datos"></<p>
-         <p>
-             <button type="reset">Restablecer</button>
-         </p>            
-       </form>
-</div>      
- </footer>
+
+<footer class="footer container-fluid negro mt-5 mb-5 m-auto row">
+    <div class="col-md-6">
+        <a href="https://www.instagram.com/by_charms/?hl=es" target="_blank">
+          <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/?hl=es" target="_blank">
+          <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+        </a>
+        <a href="https://www.whatsapp.com/?hl=es" target="_blank">
+          <ion-icon name="logo-whatsapp" role="img" class="md hydrated" aria-label="logo whatsapp"></ion-icon>
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLrXXWJVWVrRnzJzVljCDFcFbJhFTXZMCcHrXSsHHgmNVtjKCnwZdtKXtxDGQmrrdWWdnJ" target="_blank">
+          <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+        </a>
+    </div>
+    <div class="col-md-6">
+      <form action="" method="POST" 
+          <p> <h4>Boletin Informativo</h4></p>
+       
+          <input type="email">
+  <p>
+  Para recibir informacion debes aceptar nuestros términos del servicio
+  </p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+    Acepto los terminos de servicio
+    </label>
+  </div>
+         
+         <p>  <button type="button" class="btn btn-link">Enviar datos</button> </<p>            
+        </form>
+ </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+
+
 </body>
 </html>
