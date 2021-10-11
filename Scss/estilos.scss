@@ -1,5 +1,5 @@
 
-
+$width:1020px;
 
 *{
     margin: 0;
@@ -102,8 +102,8 @@ h1 {
      padding: 20px;
  }
 
-img{
-    width: 25%; height: 340px;
+img{ 
+    height: $width / 3;
  }
 
 .navbar-dark{
@@ -116,4 +116,3 @@ img{
         }
     }
 }
-
